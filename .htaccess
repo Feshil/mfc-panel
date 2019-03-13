@@ -1,0 +1,7 @@
+AddDefaultCharset UTF-8
+DirectoryIndex index.html
+Options All -Indexes
+ErrorDocument 400 /err404.html
+ErrorDocument 401 /err404.html
+ErrorDocument 403 /err404.html
+ErrorDocument 404 /err404.html

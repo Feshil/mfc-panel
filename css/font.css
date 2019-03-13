@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Bitter';
+	src: local('Bitter'), 
+	local('Bitter-Regular'),
+	url('Bitter.woff2') format('woff2'), 
+	url('Bitter.woff') format('woff'), 
+	url('Bitter.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto Slab';
+	src: local('Roboto Slab Regular'), 
+	local('RobotoSlab-Regular'), 
+	url('robotoslabregular.woff2') format('woff2'), 
+	url('robotoslabregular.woff') format('woff'), 
+	url('robotoslabregular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
