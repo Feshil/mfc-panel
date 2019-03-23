@@ -586,6 +586,14 @@ transform: translate(0, -5px) rotate(-90deg);
   right: 5px;
   visibility: hidden;
 }
+.nav-bar li:hover .main_nav .icon-up-open {
+  display: block;
+  visibility: visible;
+}
+.nav-bar li:hover .main_nav .icon-down-open {
+  display: none;
+  visibility: hidden;
+}
 .main_nav:hover::before {
   width: 100%;
   height: 100%;
