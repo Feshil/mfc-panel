@@ -44,34 +44,33 @@
               </form>
             </div>
             <div class="b-button-auth-and-social">
-            <input class="input-button-auth" type="checkbox" id="header-bt-autor" name="header-bt-autor" value="">
-            <label class="button-auth" for="header-bt-autor"><i class="icon-user"></i></label>
-            <!-- ================== hide form autorization =================== -->
-            <form id="form-auto" class="form-auto" action="#" method="get" accept-charset="utf-8" name="form-authorization">
-              <fieldset class="set-form-auto">
-                <legend class="legend-form-autor">Авторизация</legend>
-                <!-- =============close window ===============================-->
-                <a class="b-icon-cancel"><i class="icon-cancel"></i>
-                </a>
-                <!-- ==============================/close window============== -->
-                <input class="field-login" type="text" name="login" id="name" value="" placeholder="" autofocus required>
-                <label class="b-label lab-log" for="name">Логин</label>
-                <input class="field-pass" id="password" type="password" name="password" value="" required>
-                <label class="b-label lab-pass" for="password">Пароль</label>
-                <div class="b-check-save">
-                  <label class="label-savepass" for="savepass">Сохранить пароль:</label>
-                  <input class="check-save" type="checkbox" name="savepass" id="savepass" value="save">
-                  <label class="label-cust-box" for="savepass"></label>
-                </div>
-                <div class="b-submite-autoriz">
-                  <button class="submite-autoriz"><i class="icon-login"></i></button>
-                </div>
-              </fieldset>
-            </form>
-          <!-- ====================/hide form autorization================ -->
+              <!-- ================== hide form autorization =================== -->
+              <form id="form-auto" class="form-auto" action="#" method="get" accept-charset="utf-8" name="form-authorization">
+                  <fieldset class="set-form-auto">
+                    <legend class="legend-form-autor">Авторизация</legend>
+                    <!-- =============close window ===============================-->
+                    <a class="b-icon-cancel" href="#close"><i class="icon-cancel"></i>
+                    </a>
+                    <!-- ==============================/close window============== -->
+                    <input class="field-login" type="text" name="login" id="name" value="" placeholder="" autofocus required>
+                    <label class="b-label lab-log" for="name">Логин</label>
+                    <input class="field-pass" id="password" type="password" name="password" value="" required>
+                    <label class="b-label lab-pass" for="password">Пароль</label>
+                    <div class="b-check-save">
+                      <label class="label-savepass" for="savepass">Сохранить пароль:</label>
+                      <input class="check-save" type="checkbox" name="savepass" id="savepass" value="save">
+                      <label class="label-cust-box" for="savepass"></label>
+                    </div>
+                    <div class="b-submite-autoriz">
+                      <button class="submite-autoriz"><i class="icon-login"></i></button>
+                    </div>
+                  </fieldset>
+              </form>
+              <!-- ====================/hide form autorization================ -->
+              <a class="button-auth" href="#form-auto"><i class="icon-user"></i></a>
               <div class="b-header-social">
-              <a href="http://mfc.tmbreg.ru" class="header-social__icon-mfc icon-soc" target="_blank" rel="noopener noreferrer" title="Портал МФЦ Тамбов"><img class="icon-portal-mfc" src="img/svg/mydoc.svg" alt=""></a>
-              <a href="https://vk.com/mfctambovobl" class="header-social__icon-vk icon-soc" target="_blank" rel="noopener noreferrer" title="Группа МФЦ Тамбов VK"><i class="icon-vkontakte"></i></a>
+                <a href="http://mfc.tmbreg.ru" class="header-social__icon-mfc icon-soc" target="_blank" rel="noopener noreferrer" title="Портал МФЦ Тамбов"><img class="icon-portal-mfc" src="img/svg/mydoc.svg" alt=""></a>
+                <a href="https://vk.com/mfctambovobl" class="header-social__icon-vk icon-soc" target="_blank" rel="noopener noreferrer" title="Группа МФЦ Тамбов VK"><i class="icon-vkontakte"></i></a>
               </div>
             </div>
           </div>
@@ -123,17 +122,17 @@
 				</div>
 			</div>
 			<!-- =====================/Section one link================= -->
-			<!-- ======================Section two========================== -->
+			<!-- ======================Section two main========================== -->
 			<div class="b-two">
 				<main class="b-two__b-interaction-main b-interaction-main">
-					<section class="b-news-feed">
+					<section id="b-feed" class="b-news-feed">
 						<div class="top-news-feed">
 							<div class="b-caption-news-feed">
 								<h2 class="caption-news-feed">Лента</h2>
 							</div>
 							<div class="b-icon-max-min-news">
-								<i class="icon-window-maximize max-news-feed"></i>
-								<i class="icon-window-minimize min-news-feed"></i>
+								<i id="max-win-feed" class="icon-window-maximize max-news-feed"></i>
+								<i id="min-win-feed" class="icon-window-minimize min-news-feed"></i>
 							</div>
 						</div>
 						<div class="window-posts-list">
@@ -154,27 +153,27 @@
 							</ul>
 						</div>
 					</section>
-					<section class="b-last-comment">
+					<section id="b-com" class="b-last-comment">
 						<div class="top-last-comment">
 							<div class="b-caption-last-comment">
 								<h2 class="caption-last-comment">Последние<br>комментарии</h2>
 							</div>
 							<div class="b-icon-max-min-comment">
-								<i class="icon-window-maximize max-last-comment"></i>
-								<i class="icon-window-minimize min-last-comment"></i>
+								<i id="max-win-com" class="icon-window-maximize max-last-comment"></i>
+								<i id="min-win-com"class="icon-window-minimize min-last-comment"></i>
 							</div>
 						</div>
 						<div class="window-last-comment">
 						</div>
 					</section>
-					<section class="b-chat">
+					<section id="b-chat" class="b-chat">
 						<div class="top-chat">
 							<div class="b-caption-chat">
 								<h2 class="caption-chat">Чат</h2>
 							</div>
 							<div class="b-icon-max-min-chat">
-								<i class="icon-window-maximize max-chat"></i>
-								<i class="icon-window-minimize min-chat"></i>
+								<i id="max-win-chat" class="icon-window-maximize max-chat"></i>
+								<i id="min-win-chat" class="icon-window-minimize min-chat"></i>
 							</div>
 						</div>
 						<div class="window-chat">
@@ -191,7 +190,7 @@
 					</section>
 				</main>
 			</div>
-			<!-- =======================/Section two================== -->
+			<!-- =======================/Section two main================== -->
 		</div>
 		<!-- ===========================/wrapper-content============= -->
 		<!-- ============================Footer================= -->
@@ -199,21 +198,21 @@
 			<div class="footer__container-footer">
 				<p class="copirait">© 2018  Все права на сайт принадлежат&nbsp;<a href="mailto:fedotov.ilya.dev@gmail.com" class="link-mail-creator">создателю</a>
 				</p>
-				<div class="them" onclick="colorback()">
+				<div id="but-tem" class="them">
 					Cменить тему
 				</div>
 			</div>
 		</footer>
 		<!-- ============================/Footer========================-->
     <!-- ============================full windows================= -->
-    <section class="b-news-feed-full">
+    <section id="b-feed-full" class="b-news-feed-full">
       <div class="top-news-feed-full">
         <div class="b-caption-news-feed-full">
           <h2 class="caption-news-feed-full">Лента</h2>
         </div>
         <div class="b-icon-max-min-news-full">
           <i class="icon-window-maximize max-news-feed-full"></i>
-          <i class="icon-window-minimize min-news-feed-full"></i>
+          <i  id="min-win-feed-full" class="icon-window-minimize min-news-feed-full"></i>
         </div>
       </div>
       <div class="window-posts-list-full">
@@ -234,27 +233,27 @@
         </ul>
       </div>
     </section>
-    <section class="b-last-comment-full">
+    <section id="b-com-full" class="b-last-comment-full">
       <div class="top-last-comment-full">
         <div class="b-caption-last-comment-full">
           <h2 class="caption-last-comment-full">Последние<br>комментарии</h2>
         </div>
         <div class="b-icon-max-min-comment-full">
           <i class="icon-window-maximize max-last-comment-full"></i>
-          <i class="icon-window-minimize min-last-comment-full"></i>
+          <i id="min-win-com-full" class="icon-window-minimize min-last-comment-full"></i>
         </div>
       </div>
       <div class="window-last-comment-full">
       </div>
     </section>
-    <section class="b-chat-full">
+    <section id="b-chat-full" class="b-chat-full">
       <div class="top-chat-full">
         <div class="b-caption-chat-full">
           <h2 class="caption-chat-full">Чат</h2>
         </div>
         <div class="b-icon-max-min-chat-full">
           <i class="icon-window-maximize max-chat-full"></i>
-          <i class="icon-window-minimize min-chat-full"></i>
+          <i id="min-win-chat-full" class="icon-window-minimize min-chat-full"></i>
         </div>
       </div>
       <div class="window-chat-full">
@@ -272,15 +271,13 @@
     <!-- ============================/full windows================= -->
     <!-- ==================hide mini icon============ -->
     <div class="b-hide-icon">
-      <a href="" class="minim-window-icon-tape" id="minimez-window-icon-tape"><i class="icon-list"></i></a>
-      <a href="" class="minim-window-icon-last-com" id="minimez-window-icon-last-com"><i class="icon-comment-empty"></i></a>
-      <a href="" class="minim-window-icon-chat" id="minimez-window-icon-chat"><i class="icon-chat-empty"></i></a>
+      <button id="but-icon-tape" class="minim-window-icon-tape"><i class="icon-list"></i></button>
+      <button id="but-icon-last-com" class="minim-window-icon-last-com"><i class="icon-comment-empty"></i></button>
+      <button id="but-icon-chat" class="minim-window-icon-chat"><i class="icon-chat-empty"></i></button>
     </div>
     <!-- ====================/hide mini icon========== -->
   </div>
     <!-- ================================/wrapper-site====================== -->
 <script src="js/main.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
 </body>
 </html>
