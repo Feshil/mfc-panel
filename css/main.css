@@ -1005,6 +1005,8 @@ transform: translate(0, -5px) rotate(-90deg);
   top: 50%;
   right: -100px;
   border-left: 15px solid #eb5d40;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 60px;
