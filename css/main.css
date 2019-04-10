@@ -40,10 +40,12 @@ li {
 /* /background site */
 .wrapper-site {
   position: relative;
+  display: none;
 }
 /* Header */
 .header,
-.footer {
+.footer,
+.b-hide-icon {
   -webkit-user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
@@ -270,8 +272,12 @@ transform: translate(0, -5px) rotate(-90deg);
   height: 60px;
 }
 .button-auth {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px;
+  width: 50px;
+  height: 50px;
   margin-right: 20px;
   background: #eb5d40;
   box-shadow: 0 0 1px #000,
@@ -283,7 +289,7 @@ transform: translate(0, -5px) rotate(-90deg);
   transition: all .2s linear;
 }
 .icon-user {
-  font-size: calc(22px + .3vw);
+  font-size: 30px;
 }
 .button-auth:hover {
   background: #2667b2;
@@ -308,6 +314,7 @@ transform: translate(0, -5px) rotate(-90deg);
   visibility: hidden;
   top: calc(50% - 165px);
   left: calc(50% - 160px);
+  z-index: 3;
 }
 .set-form-auto {
   background: rgba(0, 0, 0, .5);
@@ -498,7 +505,6 @@ transform: translate(0, -5px) rotate(-90deg);
   height: 50px;
   border-radius: 50%;
   box-shadow: inset 0 0 2px #000;
-  transition: all .5s linear;
 }
 .icon-portal-mfc {
   width: 20px;
@@ -1448,10 +1454,16 @@ margin: 5px;
     line-height: calc(15px + 0.2vw);
     max-height: 60px;
   }
+  .button-auth {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-user {
+    font-size: 24px;
+  }
   .icon-soc {
     min-width: 40px;
     height: 40px;
-    border-radius: 50%;
   }
   .icon-portal-mfc {
     width: 20px;
@@ -1481,6 +1493,10 @@ margin: 5px;
   .b-last-comment-full,
   .b-chat-full {
     position: absolute;
+    width: 100%;
+    height: calc(100vh + 100%);
+    z-index: 7;
+    margin: 0;
   }
   .footer {
     position: relative;
