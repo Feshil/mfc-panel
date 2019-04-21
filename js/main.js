@@ -1,3 +1,4 @@
+"use strict";
 (function interaction (){
   // button
   const buttonTem = document.getElementById('but-tem'),

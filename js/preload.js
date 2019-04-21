@@ -1,3 +1,4 @@
+"use strict";
 window.onload = function () {
     setTimeout(() => {
         const preloader = document.getElementById('preloader'),
