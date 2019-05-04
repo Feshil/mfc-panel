@@ -24,6 +24,9 @@ a {
   color: #000;
   text-align: center;
 }
+input {
+  outline: none;
+}
 li {
   display: block;
   list-style-type: none;
@@ -558,21 +561,20 @@ transform: translate(0, -5px) rotate(-90deg);
   display: flex;
   width: 100%;
   height: 40px;
-  align-items: flex-end;
   position: relative;
 }
 .nav-bar {
   display: flex;
 }
-.main_nav {
+.main_link {
   position: relative;
-  line-height: 35px;
+  line-height: 40px;
   width: 170px;
   height: 40px;
   color: #fff;
   transition: all .5s linear;
 }
-.main_nav::before {
+.main_link::before {
   content: "";
   height: 0;
   width: 100%;
@@ -593,14 +595,14 @@ transform: translate(0, -5px) rotate(-90deg);
   top: 0;
   right: 5px;
 }
-.nav-bar li:hover .main_nav .icon-up-open {
+.nav-bar li:hover .main_link .icon-up-open {
   display: block;
 }
-.nav-bar li:hover .main_nav .icon-down-open {
+.nav-bar li:hover .main_link .icon-down-open {
   display: none;
 }
-.main_nav:hover::before,
-.nav-bar li:hover .main_nav::before {
+.main_link:hover::before,
+.nav-bar li:hover .main_link::before {
   transform: scale(1);
 }
 .sub-nav {
@@ -608,7 +610,7 @@ transform: translate(0, -5px) rotate(-90deg);
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  transform: scale(0.05);
+  transform: scale(0);
   transition: all .2s linear;
 }
 .sub-link::before {
@@ -637,7 +639,7 @@ transform: translate(0, -5px) rotate(-90deg);
   word-wrap: break-word;
   transition: all .3s ease;
 }
-.main_nav:hover ~ .sub-nav,
+.main_link:hover ~ .sub-nav,
 .sub-nav:hover {
   visibility: visible;
   opacity: 1;
@@ -1478,7 +1480,7 @@ margin: 5px;
 .icon-vkontakte {
   font-size: 24px;
 }
-.main_nav {
+.main_link {
   width: 150px;
   height: 30px;
   font-size: 16px;
@@ -1593,7 +1595,6 @@ margin: 5px;
   display: flex;
 }
 .b-nav {
-  display: flex;
   position: fixed;
   overflow-y: auto;
   top: 100px;
@@ -1625,17 +1626,17 @@ margin: 5px;
 .nav-bar >li:first-child {
   border-top: 1px solid #000;
 }
-.main_nav {
+.main_link {
   width: 100%;
   height: 100%;
   border: none;
 }
-.main_nav:hover {
+.main_link:hover {
 color: #000;
 border: none;
 background: #eb5d40;
 }
-.main_nav::before {
+.main_link::before {
 display: none;
 }
 .sub-link::before {
